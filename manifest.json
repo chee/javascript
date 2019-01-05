@@ -1,0 +1,39 @@
+{
+	"manifest_version": 2,
+	"name": "javascript",
+	"description": "add javascript that will run on this domain",
+	"version": "0.0.1",
+	"icons": {
+		"64": "icons/icon.png"
+	},
+	"permissions": [
+		"activeTab",
+		"storage",
+		"unlimitedStorage"
+	],
+	"background": {
+		"scripts": [
+			"background_script.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*"
+			],
+			"js": [
+				"content_script.js"
+			]
+		}
+	],
+	"browser_action": {
+		"default_icon": {
+			"64": "icons/icon.png"
+		},
+		"default_popup": "browserAction/index.html",
+		"default_title": "javascript"
+	},
+	"options_ui": {
+		"page": "options/index.html"
+	}
+}

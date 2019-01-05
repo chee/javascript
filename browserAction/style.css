@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Reem Kufi";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Reem Kufi Regular '),
+    local('Reem Kufi-Regular'),
+    url('./reem-kufi.woff2') format('woff2');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f7df1e;
+	font-family: neutra text, neutra text bold, reem kufi, sans-serif;
+	font-weight: 900;
+	min-width: 25vw;
+}
+
+textarea {
+	border: none;
+	width: 100%;
+	background: #f7df1e;
+	font-weight: bold;
+	border: 2px dotted black;
+	padding: .5em;
+}
