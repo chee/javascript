@@ -1,12 +1,21 @@
 <!doctype html>
 <meta charset=utf-8>
 <link href=style.css rel=stylesheet>
-
-<p>
-  javascript
-</p>
-
+<link href=codemirror/lib/codemirror.css rel=stylesheet>
+<link href=codemirror/addon/lint/lint.css rel=stylesheet>
+<link href=codemirror/theme/gruvbox-dark.css rel=stylesheet>
+<script src="jshint.js"></script>
+<script src=codemirror/lib/codemirror.js></script>
+<script src=codemirror/mode/javascript/javascript.js></script>
+<script src=codemirror/addon/lint/lint.js></script>
+<script src=codemirror/addon/lint/javascript-lint.js></script>
+<script src=codemirror/addon/edit/matchbrackets.js></script>
 <textarea id=javascript rows=20>
 </textarea>
 
-<script src=script.js></script>
+<p class="letters-js">
+	JS
+</p>
+
+<script src="script.js">
+</script>
