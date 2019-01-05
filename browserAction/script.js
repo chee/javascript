@@ -8,7 +8,7 @@ let editor = CodeMirror.fromTextArea(javascript, {
 	tabSize: 2,
 	indentWithTabs: true,
 	lint: CodeMirror.lint.javascript,
-	theme: "gruvbox-dark"
+	theme: "monokai"
 })
 
 editor.setOption("lint", {
