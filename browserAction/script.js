@@ -1,4 +1,3 @@
-
 let javascript = document.getElementById("javascript")
 
 let editor = CodeMirror.fromTextArea(javascript, {
@@ -37,7 +36,7 @@ async function getHost () {
 	return host
 }
 
-getHost().then(async (host) => {
+getHost().then(async () => {
 	let store = await browser.storage.local.get()
 	let code = store[await getHost()] || defaultCode
 	editor.setValue(code)
@@ -45,7 +44,7 @@ getHost().then(async (host) => {
 
 editor.on("change", async (editor) => {
 	let host = await getHost()
-	browser.storage.local.set({
+	await browser.storage.local.set({
 		[host]: editor.getValue()
 	})
 })
