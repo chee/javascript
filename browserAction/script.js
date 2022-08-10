@@ -1,4 +1,10 @@
 let javascript = document.getElementById("javascript")
+let button = document.getElementById("letters-js")
+
+button.addEventListener("click", () => {
+	browser.runtime.openOptionsPage()
+	window.close()
+})
 
 let editor = CodeMirror.fromTextArea(javascript, {
 	lineNumbers: true,

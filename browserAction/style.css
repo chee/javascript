@@ -22,9 +22,12 @@ textarea, .CodeMirror {
 	font-family: "Operator Mono", "Office Code Pro D", "Fira Code", "Fira Mono", monospace;
 }
 
-.letters-js {
-	text-align: right;
+#letters-js {
+	float: right;
 	margin: 2px;
+	background: #f7df1e;
+	border: none;
+	cursor: pointer;
 }
 
 @font-face {
