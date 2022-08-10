@@ -1,3 +1,56 @@
-h1 {
-	font-style: italic;
+.message {
+	border: 2px solid;
+	padding: 1em;
+}
+
+#done-message {
+	border-color: #33cc99;
+	background-color: #f7fff7;
+}
+
+#parse-error {
+	border-color: red;
+	background-color: #fff7f7;
+}
+
+strong {
+	display: block;
+	width: 80%;
+	margin: 1em auto 0.5em;
+	text-align: center;
+	background: #fff7f7;
+	border: 2px solid #ffe0e0;
+	padding: 1em;
+}
+
+button {
+	background: #f0f7ff;
+	border: 2px solid black;
+	padding: 1em;
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+	width: 80%;
+	margin: auto;
+}
+
+button:hover {
+	background: #fff7f7;
+	border-color: #ff0000;
+}
+
+button:focus {
+	outline-offset: 2px
+}
+
+button:active {
+	background: #d0fff0;
+	border-color: black;
+}
+
+textarea {
+	border: 2px solid black;
+	min-height: 10em;
+	font-size: 1.2em;
+	padding: 1em;
 }

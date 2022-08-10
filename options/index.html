@@ -1,6 +1,51 @@
 <!doctype html>
 <html lang="en">
 <meta charset="UTF-8">
-<link href="style.css" rel="stylesheet" />
-<h1 id="myHeading">My content</h1>
+<link href=../share/codemirror/lib/codemirror.css rel=stylesheet>
+<link href=../share/codemirror/addon/lint/lint.css rel=stylesheet>
+<link href=../share/codemirror/theme/cobalt.css rel=stylesheet>
+<script src=../share/codemirror/lib/codemirror.js></script>
+<script src=../share/codemirror/mode/javascript/javascript.js></script>
+<script src=../share/codemirror/addon/lint/lint.js></script>
+<script src=../share/codemirror/addon/lint/json-lint.js></script>
+<script src=../share/codemirror/addon/edit/matchbrackets.js></script>
+<link
+	href="style.css"
+	rel="stylesheet"
+/>
+<h1>
+   javascript
+</h1>
+
+<h2>backup</h2>
+
+<p class="message" id="done-message" hidden="hidden">
+	successfully imported! good luck
+</p>
+
+
+<p class="message" id="parse-error" hidden="hidden">
+	that config wasn't valid JSON, so i've not imported it.
+</p>
+
+<p>
+	copy this text to a file if you want to back up your scripts
+</p>
+
+<p>
+	paste text in and press the button to save your scripts
+</p>
+
+
+
+<textarea id="textarea">
+</textarea>
+
+<strong>
+	WARNING: pressing this button will remove all your current scripts and
+	replace them with the content in the text box!
+</strong>
+<button id="save-button">
+	save
+</button>
 <script src="script.js"></script>
