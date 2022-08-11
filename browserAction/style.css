@@ -6,20 +6,21 @@ body {
 	background: #f7df1e;
 	font-family: neutra text, neutra text bold, reem kufi, sans-serif;
 	font-weight: 900;
-	min-width: 25vw;
+	min-width: 80ex;
 	margin: -1px;
 	overflow: hidden;
 }
 
 textarea, .CodeMirror {
 	border: none;
-	width: 100%;
+   width: 100%;
+	min-width: 80ex;
 	background: #f7df1e;
-	font-weight: bold;
+	font-weight: normal;
 	border: 2px dotted black;
 	padding: .5em;
 	font-size: 16px;
-	font-family: "Operator Mono", "Office Code Pro D", "Fira Code", "Fira Mono", monospace;
+	font-family: "IBM Plex Mono", "Operator Mono", "Office Code Pro D", "Fira Code", "Fira Mono", monospace;
 }
 
 #letters-js {
