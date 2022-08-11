@@ -38,6 +38,6 @@ saveButton.addEventListener("click", async () => {
 		await browser.storage.local.set(config)
       show(doneMessageElement)
 	} catch (error) {
-      show("hidden")
+		show(parseErrorElement)
 	}
 })
