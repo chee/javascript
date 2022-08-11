@@ -2,10 +2,10 @@
 	"manifest_version": 2,
 	"name": "javascript",
 	"description": "add javascript that will run on this domain",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"icons": {
 		"64": "icons/64.png",
-      "512": "icons/512.png",
+		"512": "icons/512.png",
 		"1052": "icons/icon.png"
 	},
 	"permissions": [
