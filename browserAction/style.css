@@ -31,6 +31,18 @@ textarea, .CodeMirror {
 	cursor: pointer;
 }
 
+#rerun {
+	background: #f7df1e;
+	margin-left: 1ch;
+
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+#rerun:hover {
+	background: white;
+}
+
 @font-face {
 	font-family: "Reem Kufi";
 	font-style: normal;

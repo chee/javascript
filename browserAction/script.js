@@ -1,7 +1,16 @@
 let javascript = document.getElementById("javascript")
-let button = document.getElementById("letters-js")
+let lettersButton = document.getElementById("letters-js")
+let rerunButton = document.getElementById("rerun")
 
-button.addEventListener("click", () => {
+rerunButton.addEventListener("click", async () => {
+	let [tab] = await browser.tabs.query({
+		currentWindow: true,
+		active: true,
+	})
+	await browser.tabs.sendMessage(tab.id, {rerun: true})
+})
+
+lettersButton.addEventListener("click", () => {
 	browser.runtime.openOptionsPage()
 	window.close()
 })
@@ -12,14 +21,7 @@ let editor = CodeMirror.fromTextArea(javascript, {
 	matchBrackets: true,
 	tabSize: 2,
 	indentWithTabs: true,
-	lint: CodeMirror.lint.javascript,
 	theme: "monokai"
-})
-
-editor.setOption("lint", {
-	options: {
-		esversion: 6
-	}
 })
 
 let defaultCode = `\
